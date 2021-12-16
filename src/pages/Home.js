@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import  Profile from '../media/SS-1.jpg'
 // import Profile from '../../public/media/SS-1.jpg'
-import { Link, Routes, Route } from 'react-router-dom'
+import { Link, Routes, Route, useNavigate } from 'react-router-dom'
 import Featured from '../components/Featured'
 
 
 
 const Home = () => {
+    const navigate = useNavigate()
+    useEffect(() => {
+        window.scrollTo(0, 0)
+        navigate('/')
+    }, [])
     return (
         <div className="home">
         <div id="homeIntro">
@@ -22,7 +27,7 @@ const Home = () => {
                 challenge of recreating the vision of a client using the tools of the trade. 
             </p>
             </article>
-            <figure>
+            <figure id="picContainer">
                 <img id="profilePic" src={Profile} alt="a pic of me" />
                 <figcaption></figcaption>
             </figure>

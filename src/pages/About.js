@@ -1,6 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 const About = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+    
+}, [])
   return (
     <div>
       <section>
@@ -15,7 +20,7 @@ const About = () => {
             always had an affinity for technology and computers. I spend a lot
             of time reading about the newest breakthroughs in hardware and
             software. My hobbies include cooking (I worked as a chef prior to
-            starting this program) , gaming, and hanging out with my cats and
+            starting this program) , gaming, and hanging out with my partner, cats, and
             dog.
           </p>
           <figure><img src="" alt="Dax" /></figure>
