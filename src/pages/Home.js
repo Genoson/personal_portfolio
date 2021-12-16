@@ -1,7 +1,8 @@
 import React from 'react'
-import  Profile from './components/media/SS-1.jpg'
+import  Profile from '../media/SS-1.jpg'
+// import Profile from '../../public/media/SS-1.jpg'
 import { Link, Routes, Route } from 'react-router-dom'
-import Featured from './components/Featured'
+import Featured from '../components/Featured'
 
 
 
